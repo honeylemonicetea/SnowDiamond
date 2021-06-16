@@ -1,0 +1,29 @@
+.banner{
+    margin-top: 100px;
+    background-color: #ff99af;
+    height: 420px;
+    position: relative;
+}
+.banner-image{
+    background-image: url("../../../style-img/banner-removebg-preview.png");
+    /*border: solid;*/
+    height: 400px;
+    width: 600px;
+    background-size: cover;
+    position: absolute;
+    left: 55%;
+    bottom: 0;
+}
+.banner-text button{
+    background-color: black;
+    color: white;
+    margin-top: 5px;
+}
+.banner-text{
+    position: absolute;
+    top: 40%;
+    left: 10%;
+}
+.banner-text p{
+    margin: 0;
+}

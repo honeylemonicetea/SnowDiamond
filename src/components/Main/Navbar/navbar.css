@@ -1,0 +1,30 @@
+.menu{
+    border-top-left-radius: 30px;
+    border-top-right-radius:30px;
+    background: aliceblue;
+    font-family: 'Poppins', sans-serif;
+    height: 50px;
+}
+.box{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 50px;
+}
+.icon-bar img{
+    width: 14px;
+}
+.menu a:not(:last-child){
+    margin-right: 15px;
+}
+.menu a{
+    display: inline-block;
+    font-weight: 400;
+    padding: 30px 10px;
+}
+.logo img{
+width: 50%;
+}
+.menu-bar a:hover{
+    text-shadow: 0 0 10px #00cab4;
+}

@@ -1,0 +1,37 @@
+#head{
+    background-image: url("../../../style-img/HEADER.jpg");
+    height: 745px;
+    background-repeat: no-repeat;
+    background-position: center -50px;
+    background-size: cover;
+    background-attachment: fixed;
+    color: white;
+
+
+}
+.text{
+    position: absolute;
+    top: 65%;
+    left: 15%;
+}
+.text p, .text h1{
+    color: white;
+}
+.trend{
+    margin: 20px 0;
+    font-size: 18px;
+}
+.brand{
+    font-size: 60px;
+    font-weight: 700;
+}
+.text button, .banner-text button{
+    padding: 5px 20px;
+    margin-right: 34px;
+    outline: none;
+    border:none;
+}
+.text button:hover{
+    background-color: aqua;
+    box-shadow: 0 0 10px aqua;
+}

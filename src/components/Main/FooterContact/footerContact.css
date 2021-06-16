@@ -1,0 +1,79 @@
+.footer-contact{
+    padding: 210px 220px;
+    padding-bottom: 290px;
+    /*border: solid;*/
+    background-color: #F2F8FC;
+    height: 350px;
+
+}
+.footer-contact .box{
+    display: flex;
+    justify-content: space-between;
+}
+.social img{
+    width: 17px;
+    height: auto;
+}
+.social{
+    display: flex;
+    justify-content: space-between;
+    width: 110px;
+    margin-top: 10px;
+}
+.email-updates input{
+    background-color: transparent;
+    border: none;
+    outline: none;
+}
+.email-updates button{
+    background-color: transparent;
+    border: none;
+    font-weight: bold;
+    outline: none;
+    cursor: pointer;
+
+}
+.email-updates{
+    margin-top: 140px;
+}
+.input{
+    width: 470px;
+    background-color: white;
+    box-shadow: 0 0 10px #d4d4d4;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+.company-info{
+    width: 300px;
+
+}
+.footer-contact h2{
+    font-size: 1.3em;
+    margin-bottom: 10px;
+}
+.footer-contact h3{
+    font-size: 1em;
+    font-weight: bold;
+}
+.company-info #location{
+    background-image: url("../../../style-img/location.png");
+    background-repeat: no-repeat;
+    background-position: left center;
+    padding-left: 50px;
+    margin: 10px 0;
+}
+.link-box{
+    margin-top: 70px;
+    /*border: solid;*/
+    display: flex;
+    justify-content: space-between;
+    width: 500px;
+    line-height: 45px;
+    font-size: 14px;
+    font-weight: 200;
+}
+.link-item a{
+    display: block;
+}

@@ -1,0 +1,14 @@
+
+
+.men .item:nth-child(1) .item-image{
+    background-image: url("../img/9.jpg");
+}
+.men .item:nth-child(2) .item-image{
+    background-image: url("../img/10.jpg");
+}
+.men .item:nth-child(3) .item-image{
+    background-image: url("../img/11.jpg");
+}
+.men .item:nth-child(4) .item-image{
+    background-image: url("../img/12.jpg");
+}

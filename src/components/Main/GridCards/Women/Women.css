@@ -1,0 +1,54 @@
+.fashion-gallery{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: 484px;
+    grid-column-gap: 20px;
+
+}
+.gallery h1{
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+.gallery h4{
+    margin-bottom: 72px;
+}
+.fashion-gallery .item-image{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+    height: 371px;
+
+}
+.fashion-gallery .item-text{
+    text-align: left;
+    line-height: 22px;
+    font-size: 14px;
+    margin-top: 20px;
+}
+.fashion-gallery .item-text .title{
+    font-weight: 600;
+}
+.fashion-gallery .item-text .price{
+    display: flex;
+}
+.fashion-gallery .item-text .old-price{
+    margin-right: 20px;
+    text-decoration: line-through;
+}
+.fashion-gallery .item-text .discount{
+    color: #E20338;
+}
+
+.women .item:nth-child(1) .item-image{
+    background-image: url("../img/5.jpg");
+}
+.women .item:nth-child(2) .item-image{
+    background-image: url("../img/6.jpg");
+}
+.women .item:nth-child(3) .item-image{
+    background-image: url("../img/7.jpg");
+}
+.women .item:nth-child(4) .item-image{
+    background-image: url("../img/8.jpg");
+}

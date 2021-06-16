@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#brand-logo{
+    width: 60px;
+    /*height: 50px;*/
+    margin-bottom: 20px;
+}
+.brand-container{
+    width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 6fr;
+    grid-gap: 20px;
+
+}
+h1 span{
+    font-size: 1.4em;
+}
+.slogan{
+    font-style: italic;
+}
+.brand-item{
+    text-align: center;
+    padding: 80px 40px;
+}
+.lorem{
+    text-align: justify;
+    text-indent: 1em;
+}
+.sr-only{
+  color: white;
+}
+.car{
+    width: 100%;
+    margin: 0 auto;
+}
+.brand-page{
+    background-image: linear-gradient(#D3CCE3, #E9E4F0);
+    height: 100%;
+}
+html{
+    background: #E9E4F0
+}
