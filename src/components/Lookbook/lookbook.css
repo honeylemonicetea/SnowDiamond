@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mansalva&family=Shadows+Into+Light&display=swap');
+
+p{
+    margin: 0;
+    
+}
+.car{
+     height: 93vh;
+     background-position: center;
+}
+.own-car1{  
+    background-image: url('https://images.unsplash.com/photo-1490481651871-ab68de25d43d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1950&q=80');
+}
+.own-car2{
+    background-image: url('https://images.unsplash.com/photo-1544957992-20514f595d6f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1950&q=80');
+}
+.own-car3{
+    background-image: url('https://images.unsplash.com/photo-1463100099107-aa0980c362e6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1950&q=80');
+}
+.caption{
+    font-family: 'Mansalva', cursive;
+    display: inline-block ;
+    /* height: 20px; */
+    font-size: 5em;
+   margin-top:22%;
+   margin-left: 40%;
+   background-color:rgba(255, 220, 168, 0.4)
+}
+.styles-container{
+    padding-bottom: 5%;
+}
+.card img{
+    width: 100%;
+}
+.card-body{
+  
+    background-color: rgba(189, 183, 183, 0.3);
+}
+.card-deck{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 2%;
+    margin: 4%;
+    /* justify-content: space-evenly; */
+}
+.photo{
+    background-repeat: no-repeat;
+    background-position:  center;
+    height: 50vh;
+    background-size: cover;
+}
+
+.card-photo1{  /*punk*/
+    background-image: url('https://image.freepik.com/free-photo/young-punk-girl-with-baseball-bat_144627-15606.jpg');
+}
+.card-photo2{ /*boho*/
+    background-image: url('https://blog.buckle.com/wp-content/uploads/2019/02/western-inspired-outfits-from-buckle-7.jpg');
+}
+.card-photo3{ /*grunge*/
+    background-image: url('https://www.bolf.eu/data/include/cms/poradniki/W_stylu_grunge._Jak_wykreowa_wietny_look_7.jpg');
+}
+.card-photo4{ /*preppy*/
+    background-image: url('https://www.apetogentleman.com/wp-content/uploads/2018/08/preppy-style-gant.jpg');
+}
+.card-photo5{  /*sporty*/
+    background-image: url('https://blog.vionicshoes.com/wp-content/uploads/2020/06/casual-sporty-outfits.png');
+}
+.card-photo6{ /*streetwear*/
+    background-image: url('https://chinafilminsider.com/wp-content/uploads/2019/11/fourtry-stars-.jpeg');
+}
+.card-photo7{ /*casual*/
+    background-image: url('https://images.unsplash.com/photo-1512501397866-5c4b28612400?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1951&q=80');
+}
+.card-photo8{ /*gothic*/
+    background-image: url('https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/280bc0a7-dde4-4201-b503-23f78672d876/d5qnn7x-b2364dbe-6fb2-4c56-844d-d400604ea5b4.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzI4MGJjMGE3LWRkZTQtNDIwMS1iNTAzLTIzZjc4NjcyZDg3NlwvZDVxbm43eC1iMjM2NGRiZS02ZmIyLTRjNTYtODQ0ZC1kNDAwNjA0ZWE1YjQuanBnIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.FVQ1dovQ2kOtCjjDuRqkLnaJP8F0kfueLjpz-QXnTGA');
+}
+.card-photo9{ /*mori*/
+    background-image: url('https://i.pinimg.com/originals/16/f8/31/16f831090abe3499895ca314602ad168.jpg');
+}

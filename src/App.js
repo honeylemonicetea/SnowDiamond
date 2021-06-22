@@ -8,6 +8,7 @@ import UnderConst from "./components/UnderConst/UnderConst";
 import Page404 from "./components/Page404/Page404";
 import Lookbook from "./components/Lookbook/Lookbook";
 import Brand from "./components/Main/Brands/Brands";
+import Shop from './components/Main/Shop/Shop';
 
 function App(props) {
   return (
@@ -17,7 +18,7 @@ function App(props) {
             <Switch>
 {/* todo @honeylemonicetea */}
                 <Route  path='/home' component={Main}/>
-                <Route  path='/shop' component={UnderConst}/>
+                <Route  path='/shop' component={Shop}/>
                 <Route path='/lookbook' component={Lookbook}/>
                 <Route path='/features' component={UnderConst}/>
                 <Route path='/pages' component={UnderConst}/>
@@ -25,6 +26,7 @@ function App(props) {
                 <Route path='/not-found' component={Page404}/>
                 <Route path='/raspberry' render={()=><Brand name={props.state.raspberry.name} logo={props.state.raspberry.logo} pics={props.state.raspberry.pics} slogan={props.state.raspberry.slogan}/>} />
                 <Route path='/cloudberry' render={()=><Brand name={props.state.cloudberry.name} logo={props.state.cloudberry.logo}  pics={props.state.cloudberry.pics} slogan={props.state.cloudberry.slogan}/>} />
+              
                 <Route   path='/' component={Main} />
 
             </Switch>

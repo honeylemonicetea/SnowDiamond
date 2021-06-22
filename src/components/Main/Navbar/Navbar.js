@@ -20,9 +20,9 @@ function Navbar(){
                         <NavLink to="/not-found">BLOG</NavLink>
                     </div>
                     <div className="icon-bar item">
-                        <a href="#"><img src={require("../../../img/icons8-search.svg").default}/></a>
-                        <a href="#"><img src={require("../../../img/icons8-heart-outline-60.png").default}/></a>
-                        <a href="#"><img src={require("../../../img/icons8-shopping-cart-48.png").default}/></a>
+                        <NavLink to='/not-found'><img src={require("../../../img/icons8-search.svg").default}/></NavLink>
+                        <NavLink to='/not-found'><img src={require("../../../img/icons8-heart-outline-60.png").default}/></NavLink>
+                        <NavLink to='/not-found'><img src={require("../../../img/icons8-shopping-cart-48.png").default}/></NavLink>
                     </div>
                 </div>
         </div>

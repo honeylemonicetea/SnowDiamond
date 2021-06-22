@@ -1,5 +1,6 @@
 import React from "react";
 import './Banner.css'
+import {NavLink} from 'react-router-dom'
 
 function Banner(){
     return(
@@ -7,7 +8,8 @@ function Banner(){
         <div className="banner-text">
             <p className="trend">OWN THE DAY</p>
             <h1 className="brand">CREAM SODA</h1>
-            <button>SHOP COLLECTION</button>
+           
+            <button> <NavLink to='/shop'>SHOP COLLECTION</NavLink></button>
         </div>
         <div className="banner-image"/>
 

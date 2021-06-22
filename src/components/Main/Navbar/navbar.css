@@ -4,6 +4,11 @@
     background: aliceblue;
     font-family: 'Poppins', sans-serif;
     height: 50px;
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+    margin-bottom: 1%;
+    top: 0;
 }
 .box{
     display: flex;

@@ -19,6 +19,9 @@
     color: white;
     margin-top: 5px;
 }
+.banner-text button a{
+    color: white
+}
 .banner-text{
     position: absolute;
     top: 40%;
