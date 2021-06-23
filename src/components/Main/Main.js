@@ -12,8 +12,7 @@ function Main(){
         <Header/>
         <GridCards/>
         <Banner/>
-        <FooterContact/>
-        <FooterCopyright/>
+        
         </div>
     )
 }

@@ -1,11 +1,12 @@
 import React from 'react'
 import {NavLink} from 'react-router-dom'
 import './shop.css'
+import ItemCard from './item-card/ItemCard'
 
-function Shop(){
+function Shop(props){
     return(
     <div className='shop-container'>
-        <div className='side-menu'>
+        <div className='side-menu side'>
             <h3>Shop by Category</h3>
             <NavLink to=''>Women</NavLink>
             <NavLink to=''>Men</NavLink>
@@ -23,7 +24,11 @@ function Shop(){
             <NavLink to=''>Jumpsuits & Rompers</NavLink>
             <NavLink to=''>Skirts</NavLink>
         </div>
-        <div className='item-grid'></div>
+        <div className='item-grid side'>
+            {/* <ItemCard/> */}
+            {props.shop.map((e)=><ItemCard image1={e.image1} title = {e.title} price={e.price} />)}
+
+        </div>
     </div>)
 }
 export default Shop

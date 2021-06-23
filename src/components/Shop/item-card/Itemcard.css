@@ -1,0 +1,23 @@
+
+
+.double-image .img{
+    width: 20vw;
+    height: 50vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    margin-bottom: 3%;
+   
+}
+.item-card{
+    margin: 2%;
+}
+
+.item-title{
+    font-size: 0.8em;
+    font-weight: bold;
+}
+.item-title:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
