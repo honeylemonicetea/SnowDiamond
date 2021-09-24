@@ -69,7 +69,8 @@ width: 100%;
     .logo-burger{
         min-width: 50px;
         max-width: 5%;
-        height: fit-content
+        max-height: 5%;
+        /* height: fit-content */
     }
     .bar-wrapper{
         display: inline-block;
