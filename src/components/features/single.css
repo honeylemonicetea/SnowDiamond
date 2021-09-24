@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
+
+.single-item{
+    height: 93.5vh;
+    padding-top: 300px;
+    background-position:  center ;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.single-item p{
+    background-color: rgba(255, 255, 255, 0.7);
+    text-align: center;
+    font-size: 3em;
+    font-family: 'Staatliches', cursive;
+}

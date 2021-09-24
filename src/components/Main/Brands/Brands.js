@@ -1,4 +1,4 @@
-import React, {useState} from 'react'
+import React, {useState, useEffect} from 'react'
 import './brands.css'
 
 // import {Carousel} from "react-bootstrap";
@@ -8,6 +8,9 @@ import CarCustom from "../Carousel/Carousel";
 
 
 function Brand(props){
+     useEffect(() => {
+       window.scrollTo(0, 0);
+     }, []);
     const [index, setIndex] = useState(0);
 
     const handleSelect = (selectedIndex, e) => {

@@ -1,13 +1,11 @@
 .menu{
-    border-top-left-radius: 30px;
-    border-top-right-radius:30px;
+
     background: aliceblue;
     font-family: 'Poppins', sans-serif;
     height: 50px;
     position: fixed;
     width: 100%;
     z-index: 100;
-    margin-bottom: 1%;
     top: 0;
 }
 .box{
@@ -28,8 +26,65 @@
     padding: 30px 10px;
 }
 .logo img{
-width: 50%;
+width: 100%;
+}
+.logo a{
+    width: 50px;
 }
 .menu-bar a:hover{
     text-shadow: 0 0 10px #00cab4;
+}
+.box-burger{
+    display: none
+}
+
+
+@media (max-width: 860px) {
+    /* hiding the original menu */
+    .box{
+        display: none;
+    }
+    /* CONTAINER STYLES */
+    .menu{
+        display: block;
+        position: static;
+        border-radius: 0;
+        background-color: #f8edeb;
+        height: fit-content;
+        margin: 0
+
+    }
+   
+    .box-burger{
+        display: block;
+    }
+    .top-burger{
+        padding: 15px 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    /* ELEMENT STYLES */
+    .logo-burger{
+        min-width: 50px;
+        max-width: 5%;
+        height: fit-content
+    }
+    .bar-wrapper{
+        display: inline-block;
+    }
+    .website-name{
+        font-size: 2.5em;
+        font-weight: bold;
+        text-shadow: 0 0 3px white;
+    }
+    .bottom-burger a{
+        display: block;
+        font-size: 2em;
+        padding: 1% 10%;
+    }
+    .opened{
+        transform: translateY(100%);
+    }
 }

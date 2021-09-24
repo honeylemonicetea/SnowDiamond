@@ -77,3 +77,48 @@
 .link-item a{
     display: block;
 }
+
+@media (max-width: 860px) {
+    .box .item{
+        display: block
+    }
+    .footer-contact .box{
+        height: fit-content;
+        background-color: #F2F8FC;
+        display: block;
+        padding: 20px;
+
+    }
+    .footer-contact{
+        padding: 0;
+        padding-bottom: 0;
+        /*border: solid;*/
+        background-color: #F2F8FC;
+        height: fit-content; 
+    }
+    .email-updates{
+        margin-top: 5%
+    }
+    .link-box{
+        display: block;
+         width: 95vw;
+    }
+    .input{
+        width: 90vw;
+        background-color: white;
+        box-shadow: 0 0 10px #d4d4d4;
+        display: flex;
+        justify-content: space-between;
+        padding: 10px 20px;
+        border-radius: 5px;
+    }
+    a{
+        max-width: 95vw;
+    }
+    .link-item{
+        width: 95vw;
+        padding: 0;
+    }
+
+
+}

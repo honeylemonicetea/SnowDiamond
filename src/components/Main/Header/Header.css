@@ -6,7 +6,7 @@
     background-size: cover;
     background-attachment: fixed;
     color: white;
-    margin-top: 3%;
+    
 
 
 }
@@ -35,4 +35,43 @@
 .text button:hover{
     background-color: aqua;
     box-shadow: 0 0 10px aqua;
+}
+
+@media (max-width: 860px) {
+    #head{
+        text-align: center;
+        height: auto;
+        padding: 20% 0;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        background-attachment: scroll;
+        color: white;
+    }
+    .text{
+        position: static;
+       
+    }
+    .text p, .text h1{
+        color: white;
+        margin: 0;
+    }
+    .trend{
+        font-size: 18px;
+    }
+    .brand{
+        font-size: 60px;
+        font-weight: 700;
+    }
+    .text button, .banner-text button{
+        padding: 5px 20px;
+        margin-right: 0;
+        outline: none;
+        border:none;
+    }
+    .text button:hover{
+        background-color: rgb(255, 255, 255);
+        box-shadow: 0 0 10px rgb(255, 255, 255);
+    }
+
 }

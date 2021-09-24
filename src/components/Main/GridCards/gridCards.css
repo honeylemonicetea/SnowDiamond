@@ -7,3 +7,11 @@
 .container:not(:first-child){
     text-align: center;
 }
+
+@media (max-width: 860px) {
+    .container{
+        width: 95vw;
+        margin: 0;
+    }
+    
+}

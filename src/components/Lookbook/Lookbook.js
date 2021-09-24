@@ -1,9 +1,13 @@
-import React, {useState} from 'react'
+import React, {useState, useEffect} from 'react'
 import {Carousel, Card, CardDeck} from "react-bootstrap"
 import './lookbook.css'
 
 
 function Lookbook(){
+     useEffect(() => {
+       window.scrollTo(0, 0);
+     }, []);
+
     const [index, setIndex] = useState(0);
 
     const handleSelect = (selectedIndex, e) => {

@@ -14,13 +14,15 @@ a{
   padding: 0;
   text-decoration: none;
   list-style: none;
-  color: black;
+  /* color: black; */
 }
 body{
   font-family: Poppins, sans-serif;
   background-color: white;
 }
-
+/* .Main{
+  width: 100vw;
+} */
 /*MENU BAR STYLES*/
 
 

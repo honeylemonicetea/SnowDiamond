@@ -1,0 +1,70 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0053)https://static.btloader.com/safeFrame.html?upapi=true -->
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+    <script>
+      var evalCode = function (code) {
+        try {
+          window.eval(code);
+        } catch (error) {}
+      };
+
+      window.addEventListener("message", function (ev) {
+        var key = ev.message ? "message" : "data";
+        var data = {};
+        if (typeof ev[key] === "object") {
+          data = ev[key];
+        } else {
+          try {
+            data = JSON.parse(ev[key]);
+          } catch (e) {
+            return;
+          }
+        }
+        if (data.type !== "eval") {
+          return;
+        }
+
+        evalCode(data.code);
+      });
+    </script>
+    <script>
+      window.addEventListener("message", function (ev) {
+        var key = ev.message ? "message" : "data";
+        var data = {};
+        if (typeof ev[key] === "object") {
+          data = ev[key];
+        } else {
+          try {
+            data = JSON.parse(ev[key]);
+          } catch (e) {
+            return;
+          }
+        }
+        if (data.message !== "Render Secure Creative") {
+          return;
+        }
+
+        var ad = data.ad;
+
+        // will check if browser is firefox and below version 67, if so execute special doc.open()
+        // for details see: https://github.com/prebid/Prebid.js/pull/3524
+        // TODO remove this browser specific code at later date (when Firefox < 67 usage is mostly gone)
+        if (
+          navigator.userAgent &&
+          navigator.userAgent.toLowerCase().indexOf("firefox/") > -1
+        ) {
+          const firefoxVerRegx = /firefox\/([\d\.]+)/;
+          let firefoxVer = navigator.userAgent
+            .toLowerCase()
+            .match(firefoxVerRegx)[1]; // grabs the text in the 1st matching group
+          if (firefoxVer && parseInt(firefoxVer, 10) < 67) {
+            document.open("text/html", "replace");
+          }
+        }
+        document.write(ad);
+        document.close();
+      });
+    </script>
+  </head>
+  <body data-new-gr-c-s-check-loaded="14.1027.0" data-gr-ext-installed="">
+</body><grammarly-desktop-integration data-grammarly-shadow-root="true"></grammarly-desktop-integration></html>

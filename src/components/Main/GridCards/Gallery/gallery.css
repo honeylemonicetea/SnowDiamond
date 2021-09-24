@@ -7,7 +7,6 @@
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: 250px 250px;
-
     grid-gap: 20px;
 }
 
@@ -45,4 +44,22 @@
     transform: scale(1.04);
     border: 1px black solid;
     transition-duration: 1s;
+}
+
+@media (max-width: 860px) {
+    .gallery-box{
+        display: block;
+       
+    }
+    .gallery-box .item{
+        width: 95vw;
+        height: 250px;
+        background-position: center;
+        margin: 10px 0;
+    }
+    .gallery-box .item:hover{
+    transform: scale(1);
+    border: none;
+    transition-duration: 1s;
+}
 }

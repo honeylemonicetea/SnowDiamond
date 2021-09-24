@@ -1,0 +1,23 @@
+.top-btn{
+    background: none;
+    border: none;
+    width: 60px;
+    height: 60px;
+    background-color: #48CAE4;
+    border-radius: 100%;
+    color: white;
+    position: fixed;
+    right: 2%;
+    bottom: 3%;
+    z-index: 100;
+
+}
+
+.top-btn:hover{
+    background-color: #0096C7;
+}
+.top-btn:active{
+    
+    box-shadow: 0 0 6px 2px rgb(124, 124, 124);
+
+}

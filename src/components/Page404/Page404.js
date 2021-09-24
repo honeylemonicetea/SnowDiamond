@@ -1,9 +1,12 @@
 // <a href='https://www.freepik.com/photos/coffee'>Coffee photo created by wayhomestudio - www.freepik.com</a>
 
-import React from "react";
+import React, {useEffect}  from "react";
 import './page404.css'
 
 function Page404(){
+     useEffect(() => {
+       window.scrollTo(0, 0);
+     }, []);
     return(
         <div className='ghost-page'>
             <div className="ghost-text">

@@ -52,3 +52,23 @@
 .women .item:nth-child(4) .item-image{
     background-image: url("../img/8.jpg");
 }
+
+@media (max-width: 860px) {
+    .gallery{
+        width: 95vw;
+        text-align: center;
+    }
+    .container{
+        width: 95vw;
+    }
+    .fashion-gallery{
+        width: 95vw;
+        display: grid;
+        grid-template-columns: minmax(200px, 100vw);
+        grid-template-rows: 484px;
+        grid-column-gap: 20px;
+    }
+    .fashion-gallery .item-image{
+        background-position: center;
+    }
+}

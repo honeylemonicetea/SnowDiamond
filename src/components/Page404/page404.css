@@ -1,13 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 
 .ghost-page{
-    width: 100vw;
+    width: 98.8vw;
     height: 92.9vh;
     background-image:  url("../../img/young-handsome-man-student-with-trendy-hairstyle-isolated.png"), linear-gradient(#2DBDE8, #0070A5);
     background-size: contain;
     background-position: bottom 0  left 190%;
     background-repeat: no-repeat;
     font-family: 'Bebas Neue', cursive;
+    margin-top: 3.5%;
+    
 }
 .ghost-text{
     padding-top: 20%;
