@@ -70,7 +70,7 @@ function Navbar(){
             />
             <p className='website-name'>美人鱼</p>
             {/* <div className="bar-wrapper"> */}
-              <FontAwesomeIcon icon={faBars} size="2x" onClick={toggleOpen} />
+              <FontAwesomeIcon icon={burgerOpen=='closed'? faBars: faTimes} size="2x" onClick={toggleOpen} />
             {/* </div> */}
           </div>
 

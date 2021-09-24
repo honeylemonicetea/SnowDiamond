@@ -80,12 +80,24 @@ width: 100%;
         font-weight: bold;
         text-shadow: 0 0 3px white;
     }
+    .bottom-burger{
+        background-color: #EBF5FB;
+        transition: display 10s;
+    }
     .bottom-burger a{
         display: block;
         font-size: 2em;
-        padding: 1% 10%;
+        padding-left: 5%;
+        width: fit-content;
+        
+    }
+    .closed{
+        display: none;
+        transition: 10s;
+        
     }
     .opened{
-        transform: translateY(100%);
+        display: block;
+         transition: 10s;
     }
 }
