@@ -29,3 +29,20 @@
     background-position: center;
     z-index: 1;
 }
+@media (max-width: 860px) {
+    .const-text{
+        clip-path:none;
+        text-align: center;
+    }
+    .const-text h1{
+        width: fit-content;
+        margin: 0;
+        font-family: 'Caveat', cursive;
+        font-size: 2em;
+        position: relative;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -20%);
+    }
+
+}

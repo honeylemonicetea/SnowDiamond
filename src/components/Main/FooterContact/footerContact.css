@@ -104,14 +104,17 @@
          width: 90vw;
     }
     .input{
-        width: 90vw;
+        width: fit-content;
+        
         background-color: white;
         box-shadow: 0 0 10px #d4d4d4;
         display: block;
         justify-content: space-between;
         padding: 10px 20px;
         border-radius: 5px;
+        text-align: right;
     }
+    
     a{
         max-width: 95vw;
     }

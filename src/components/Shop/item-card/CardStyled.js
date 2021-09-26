@@ -11,6 +11,9 @@ export const Img = styled.div`
   :hover {
     background-image: url(${(props) => props.imageB});
   }
+  @media (max-width: 860px) {
+    width: 100%;
+  }
 `;
 
 export const SwatchDiv = styled.div`

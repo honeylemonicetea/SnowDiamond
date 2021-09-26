@@ -2,7 +2,7 @@
     width: 240px;
     height: 240px;
     display:inline-block;
-
+ 
     animation: 4s linear 1s infinite spin;
     
     /* transform: rotate(20deg); */
@@ -10,7 +10,10 @@
 
 }
 
-
+.ghost-page{
+    margin: 0;
+    background-image: linear-gradient(to right, #EDF2FB, #E2EAFC, #D7E3FC,#CCDBFD,#C1D3FE, #B6CCFE, #ABC4FF);
+}
     @keyframes spin {
         0% {transform: rotate(0deg)}
         10% {transform: rotate(36deg)}
@@ -41,4 +44,27 @@
 /* .spinner:hover{
     transform: rotate(50deg);
 } */
+@media (max-width: 860px) {
+    .spinner{
+    width: 20%;
+    height: auto;
+    display:block;
+    margin: 0 auto;
+    }
+
+
+
+.spin-box{  
+    padding: 0;
+    padding-top: 40%;
+    height: 100vh;
+    background-image: linear-gradient(to right, #EDF2FB, #E2EAFC, #D7E3FC,#CCDBFD,#C1D3FE, #B6CCFE, #ABC4FF);
+    text-align: center;
+}
+#spinner-text {
+    margin-top: 0;
+    font-size: 1.5em;
+    position: static;
+}
+}
 

@@ -20,7 +20,6 @@ function Navbar(){
     }
     return (
       <div className="menu">
-
         {/* NORMAL */}
         <div className="box">
           <div className="logo item">
@@ -63,25 +62,42 @@ function Navbar(){
         {/* BURGER MENU */}
         <div className="box-burger">
           <div className="top-burger">
-            <img
-              src={require("../../../img/diamond.png").default}
-              className="logo-burger"
-              
-            />
-            <p className='website-name'>美人鱼</p>
+            <NavLink to="/home">
+              <img
+                src={require("../../../img/diamond.png").default}
+                className="logo-burger"
+              />
+             </NavLink>
+            <p className="website-name">美人鱼</p>
             {/* <div className="bar-wrapper"> */}
-              <FontAwesomeIcon icon={burgerOpen=='closed'? faBars: faTimes} size="2x" onClick={toggleOpen} />
+            <FontAwesomeIcon
+              icon={burgerOpen == "closed" ? faBars : faTimes}
+              size="2x"
+              onClick={toggleOpen}
+            />
             {/* </div> */}
           </div>
 
-            <div className={`bottom-burger ${burgerOpen}`} >
+          <div className={`bottom-burger ${burgerOpen}`}>
             <div className="menu-bar-burger item-burger">
-              <NavLink to="/home">HOME</NavLink>
-              <NavLink to="/shop">SHOP</NavLink>
-              <NavLink to="/lookbook">LOOKBOOK</NavLink>
-              <NavLink to="/features">FEATURES</NavLink>
-              <NavLink to="/pages">PAGES</NavLink>
-              <NavLink to="/not-found">BLOG</NavLink>
+              <NavLink to="/home" onClick={toggleOpen}>
+                HOME
+              </NavLink>
+              <NavLink to="/shop" onClick={toggleOpen}>
+                SHOP
+              </NavLink>
+              <NavLink to="/lookbook" onClick={toggleOpen}>
+                LOOKBOOK
+              </NavLink>
+              <NavLink to="/features" onClick={toggleOpen}>
+                FEATURES
+              </NavLink>
+              <NavLink to="/pages" onClick={toggleOpen}>
+                PAGES
+              </NavLink>
+              <NavLink to="/not-found" onClick={toggleOpen}>
+                BLOG
+              </NavLink>
             </div>
           </div>
         </div>

@@ -10,7 +10,7 @@
     margin-bottom: 20px;
 }
 .brand-container{
-    width: 1200px;
+    width: 95vw;
     margin: 0 auto;
     display: grid;
     grid-template-columns: 1fr 6fr;
@@ -40,4 +40,14 @@ h1 span{
     margin: 0 auto;
     height: 100%;
 }
-
+@media (max-width: 860px) {
+    .brand-container{
+        width: 95vw;
+        margin: 0 auto;
+        display: block;
+        /* height: 60vh; */
+        margin-top: 13%;
+        margin-bottom: 10%;
+    }
+    
+}

@@ -85,13 +85,41 @@ function ItemDetail(){
               width={600}
               height={600} /> */}
             </div>
+            <div className="preview-row">
+              {/* use onclick and usestate hook */}
+              <div className="preview-inner">
+                <img
+                src={filtered.imageA}
+                alt={filtered.title}
+                title={filtered.title}
+                onClick={() => setMainImage(filtered.imageA)}
+              />
+
+              <img
+                src={filtered.imageB}
+                alt={filtered.title}
+                title={filtered.title}
+                onClick={() => setMainImage(filtered.imageB)}
+              />
+              <img
+                src={filtered.imageC}
+                alt={filtered.title}
+                title={filtered.title}
+                onClick={() => setMainImage(filtered.imageC)}
+              />
+              <img
+                src={filtered.imageD}
+                alt={filtered.title}
+                title={filtered.title}
+                onClick={() => setMainImage(filtered.imageD)}
+              />
+              </div>
+              
+            </div>
           </div>
           <div className="details-right">
             <h1 className="detail-title">{filtered.title}</h1>
-            <p className='desc'>
-              {filtered.productDescription}
-              
-            </p>
+            <p className="desc">{filtered.productDescription}</p>
             <p className="detail-price">{filtered.price}</p>
             <p className="color-chosen">
               {color ? color : filtered.swatches[0].colorName}

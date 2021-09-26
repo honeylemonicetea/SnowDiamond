@@ -26,7 +26,9 @@ function App(props) {
     <div className="App">
       <BrowserRouter>
         <Navbar />
-        <Switch>
+
+        <div className="content-padding">
+          <Switch>
           {/* todo @honeylemonicetea */}
           <Route path="/home" component={Main} />
           <Route path="/shop" render={() => <Shop shop={props.state.shop} />} />
@@ -70,8 +72,11 @@ function App(props) {
         </Switch>
         <FooterContact />
         <FooterCopyright />
+      </div>
       </BrowserRouter>
       <ArrowUp/>
+        
+        
     </div>
   );
 }

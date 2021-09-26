@@ -22,6 +22,12 @@ body{
   font-family: Poppins, sans-serif;
   background-color: white;
 }
+@media (max-width:860px) {
+  .content-padding{
+    margin-top: 9vh;
+  }
+}
+
 /* .Main{
   width: 100vw;
 } */

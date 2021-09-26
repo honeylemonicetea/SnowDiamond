@@ -47,11 +47,12 @@ width: 100%;
     /* CONTAINER STYLES */
     .menu{
         display: block;
-        position: static;
+        position: fixed;
         border-radius: 0;
         background-color: #f8edeb;
         height: fit-content;
-        margin: 0
+        margin: 0;
+        
 
     }
    
@@ -59,24 +60,27 @@ width: 100%;
         display: block;
     }
     .top-burger{
-        padding: 15px 20px;
+        padding: 5px 20px;
         display: flex;
         justify-content: space-between;
         align-items: center;
     }
-
+    .top-burger a{
+        padding: 0;
+        margin: 0;
+    }
     /* ELEMENT STYLES */
-    .logo-burger{
+    .logo-burger, .top-burger a{
         min-width: 50px;
-        max-width: 5%;
-        max-height: 5%;
+        max-width: 3%;
+        max-height: 3%;
         /* height: fit-content */
     }
     .bar-wrapper{
         display: inline-block;
     }
     .website-name{
-        font-size: 2.5em;
+        font-size: 1.5em;
         font-weight: bold;
         text-shadow: 0 0 3px white;
     }

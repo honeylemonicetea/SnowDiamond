@@ -86,3 +86,31 @@ p{
 .card-photo9{ /*mori*/
     background-image: url('https://i.pinimg.com/originals/16/f8/31/16f831090abe3499895ca314602ad168.jpg');
 }
+@media (max-width: 860px) {
+    .lookbook-carousel .carousel-inner, .lookbook-carousel .carousel-item{
+        height: 80vh;
+    }
+    .lookbook-carousel{
+        padding: 5%;
+    }
+    .caption{
+        font-size: 4em;
+        margin: 0;
+        position: relative;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        
+    }
+    .car{
+     height: 100%;
+     background-position: center;
+     background-size: cover;
+     background-repeat: no-repeat;
+    }
+    .card-deck{
+    grid-template-columns: 1fr 1fr;
+    /* justify-content: space-evenly; */
+}
+
+}

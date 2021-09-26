@@ -2,6 +2,7 @@
 
 import React, {useEffect}  from "react";
 import './page404.css'
+import Spinner from "../Main/GlobalComponents/Spinner";
 
 function Page404(){
      useEffect(() => {
@@ -13,7 +14,7 @@ function Page404(){
                 <h1>Error 404</h1>
                 <p>The page you are looking for is not found</p>
             </div>
-
+            {/* <Spinner/> */}
         </div>
     )
 }
