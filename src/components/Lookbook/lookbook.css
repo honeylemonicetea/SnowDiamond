@@ -118,5 +118,14 @@ p{
     .card-deck{
         grid-template-columns: 1fr;
     }
+    .lookbook-container{
+        min-height: fit-content;
+    }
+    .styles-container{
+        min-height: fit-content;
+    }
+    .card-deck{
+        min-height: fit-content;
+    }
     
 }

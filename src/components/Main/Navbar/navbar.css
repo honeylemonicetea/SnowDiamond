@@ -53,6 +53,7 @@ width: 100%;
         height: fit-content;
         margin: 0;
         z-index: 1000;
+        min-height: 8vh;
         
 
     }
