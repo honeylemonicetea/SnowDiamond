@@ -23,9 +23,9 @@ body{
   font-family: Poppins, sans-serif;
   background-color: white;
 }
-.content-padding{
+/* .content-padding{
   min-height: fit-content;
-}
+} */
 @media (max-width:860px) {
   .content-padding{
     margin-top: 9vh;
