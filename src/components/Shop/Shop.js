@@ -36,11 +36,18 @@ function Shop(props) {
     
   }, []);
 
+
+  function closeMenu(){
+    console.log('works')
+  }
+
   return loading ? (
     <Spinner />
   ) : (
-    <div className="shop-container">
+    <div className="shop-container"> 
+    <div className="gray-overlay" onClick={closeMenu}></div>
       <div className="side-menu side">
+       
         <h3>Shop by Category</h3>
         <NavLink to="shop">View All</NavLink>
         <NavLink to="category/women">Women</NavLink>

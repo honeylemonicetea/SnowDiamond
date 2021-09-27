@@ -10,10 +10,8 @@
 
 }
 
-.ghost-page{
-    margin: 0;
-    background-image: linear-gradient(to right, #EDF2FB, #E2EAFC, #D7E3FC,#CCDBFD,#C1D3FE, #B6CCFE, #ABC4FF);
-}
+
+
     @keyframes spin {
         0% {transform: rotate(0deg)}
         10% {transform: rotate(36deg)}

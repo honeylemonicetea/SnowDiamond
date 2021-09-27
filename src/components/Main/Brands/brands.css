@@ -46,8 +46,12 @@ h1 span{
         margin: 0 auto;
         display: block;
         /* height: 60vh; */
-        margin-top: 13%;
+        margin-top: 13vh;
         margin-bottom: 10%;
+    }
+    .brand-item{
+        text-align: justify;
+        padding: 0 10px;
     }
     
 }

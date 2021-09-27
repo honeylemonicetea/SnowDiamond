@@ -114,3 +114,9 @@ p{
 }
 
 }
+@media (max-width: 400px) {
+    .card-deck{
+        grid-template-columns: 1fr;
+    }
+    
+}
