@@ -61,6 +61,7 @@ width: 100%;
     .box-burger{
         display: block;
         min-height: 10vh !important;
+        max-height: 10vh !important;
     }
     .top-burger{
         padding: 5px 20px;
@@ -68,6 +69,7 @@ width: 100%;
         justify-content: space-between;
         align-items: center;
         min-height: 10vh !important;
+        max-height: 10vh !important;
     }
     .top-burger a{
         padding: 0;
