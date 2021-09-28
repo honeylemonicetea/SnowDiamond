@@ -80,6 +80,8 @@ width: 100%;
         min-width: 50px;
         max-width: 3%;
         max-height: 3%;
+        min-height: 3% !important;
+        max-height: 3% !important;
         /* height: fit-content */
     }
     .bar-wrapper{
