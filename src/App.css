@@ -17,7 +17,8 @@ a{
   box-sizing: border-box;
   padding-right: 0;
   
-  max-height: fit-content;
+  min-height: fit-content;
+  
   /* color: black; */
 }
 body{
