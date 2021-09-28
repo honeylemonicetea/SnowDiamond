@@ -53,19 +53,21 @@ width: 100%;
         height: fit-content;
         margin: 0;
         z-index: 1000;
-        max-height: 10vh !important;
+        min-height: 10vh !important;
         
 
     }
    
     .box-burger{
         display: block;
+        min-height: 10vh !important;
     }
     .top-burger{
         padding: 5px 20px;
         display: flex;
         justify-content: space-between;
         align-items: center;
+        min-height: 10vh !important;
     }
     .top-burger a{
         padding: 0;
