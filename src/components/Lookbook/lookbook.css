@@ -87,6 +87,9 @@ p{
     background-image: url('https://i.pinimg.com/originals/16/f8/31/16f831090abe3499895ca314602ad168.jpg');
 }
 @media (max-width: 860px) {
+    .styles-container{
+        margin-bottom: 40vh;
+    }
     .lookbook-carousel .carousel-inner, .lookbook-carousel .carousel-item{
         height: 80vh;
     }
@@ -115,17 +118,28 @@ p{
 
 }
 @media (max-width: 400px) {
-    .card-deck{
-        grid-template-columns: 1fr;
+   .photo{
+        background-repeat: no-repeat;
+        background-position:  center;
+        height: 30vh;
+        background-size: cover;
     }
     .lookbook-container{
-        min-height: fit-content;
-    }
-    .styles-container{
-        min-height: fit-content;
+        height: fit-content;
     }
     .card-deck{
-        min-height: fit-content;
+        grid-template-columns:1fr 1fr  ;
+        grid-template-rows: repeat(9, 15wh);
+        min-height: max-content !important;
+        grid-gap: 0.5%;
+        margin: 0;
     }
-    
+    .styles-container {
+        min-height: max-content;
+        margin-bottom: 10%;
+    }
+    .styles-container > div{
+        min-height: max-content;
+    }
+   
 }
