@@ -16,7 +16,8 @@ a{
   list-style: none;
   box-sizing: border-box;
   padding-right: 0;
-  /* min-height: fit-content; */
+  
+  max-height: fit-content;
   /* color: black; */
 }
 body{
