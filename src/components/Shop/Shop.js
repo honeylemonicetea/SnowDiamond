@@ -7,8 +7,8 @@ import "./shop.css";
 import ItemCard from "./item-card/ItemCard";
 import Spinner from "../Main/GlobalComponents/Spinner";
 
-import LoadMoreBtn from "../Main/GlobalComponents/LoadMore/LoadMore";
-import ReactPaginate from 'react-paginate';
+// import LoadMoreBtn from "../Main/GlobalComponents/LoadMore/LoadMore";
+// import ReactPaginate from 'react-paginate';
 
 // const cardsNumber = 6;
 // let cardsArray = []
@@ -17,10 +17,10 @@ import ReactPaginate from 'react-paginate';
 function Shop(props) {
   // PAGINATION START
   
-    const perPage = 6
-    let pageNum = 0
-    let pages = 0
-    const [pagesAmount, setpagesAmount] = useState(pages)
+    // const perPage = 6
+    // let pageNum = 0
+    // let pages = 0
+    // const [pagesAmount, setpagesAmount] = useState(pages)
 
 
   // PAGINATION END
@@ -76,9 +76,9 @@ function Shop(props) {
   // };
 
   // pagination FUNCTION START
-  function pageNav(){
-    let items = clothing.slice(pageNum * perPage, (pageNum + 1) * perPage);
-  }
+  // function pageNav(){
+  //   let items = clothing.slice(pageNum * perPage, (pageNum + 1) * perPage);
+  // }
   
   // PAGINATION FRUNCTION END
 
