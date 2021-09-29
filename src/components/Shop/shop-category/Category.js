@@ -22,13 +22,37 @@ function Category(){
          .then(
            (result) => {
              console.log(result)
-             let selected = result.filter((e)=>{
-                 if (e.category == category){
-                     return e
+             if (
+               category !== "women" &&
+               category !== "men" &&
+               category !== "kids"
+             ) {
+               let selected = result.filter((e) => {
+                 if (e.category == category) {
+                   return e;
                  }
-             }) 
-             setFilteredCat(selected);
-             setLoading(false);
+               });
+               setFilteredCat(selected);
+               setLoading(false);
+             } else if (category == "women") {
+               let selected = result.filter((e) => {
+                 if (e.fashionChoice == "female") {
+                   return e;
+                 }
+               });
+               setFilteredCat(selected);
+               setLoading(false);
+             } else if (category == "men") {
+               let selected = result.filter((e) => {
+                 if (e.fashionChoice == "male") {
+                   return e;
+                 }
+               });
+               setFilteredCat(selected);
+               setLoading(false);
+             }
+             
+             
            },
            (error) => {
              console.log(error);
@@ -36,21 +60,25 @@ function Category(){
          );
      }, [category]);
      console.log(category)
-     function closeMenu() {
-       console.log("works");
-     }
+      function closeMenu() {
+        if (toggleMenu == "menu-closed") {
+          setToggleMenu("menu-open");
+        } else if (toggleMenu == "menu-open") {
+          setToggleMenu("menu-closed");
+        }
+      }
     return loading ? (
       <Spinner />
     ) : (
       <div className="shop-container">
-        <div className="gray-overlay" onClick={closeMenu}></div>
-        <div className="side-menu side">
+        <div className={`gray-overlay ${toggleMenu}`} onClick={closeMenu}></div>
+        <div className={`side-menu side ${toggleMenu}`}>
           <h3>Shop by Category</h3>
-          <NavLink to="shop">View All</NavLink>
+          <NavLink to="/shop">View All</NavLink>
           <NavLink to="/category/women">Women</NavLink>
           <NavLink to="/category/men">Men</NavLink>
           <h3>Shop by Product</h3>
-          <NavLink to="shop"> View All</NavLink>
+          <NavLink to="/shop"> View All</NavLink>
           <NavLink to="/category/dresses">Dresses</NavLink>
           <NavLink to="/category/tops">Tops</NavLink>
           <NavLink to="/category/shirts-blouses">Shirts & Blouses</NavLink>
@@ -69,7 +97,9 @@ function Category(){
           </NavLink>
           <NavLink to="/category/skirts">Skirts</NavLink>
         </div>
-
+        <button onClick={closeMenu} className="category-menu">
+          open menu
+        </button>
         <div className="item-grid side">
           {filteredCat.map((e) => (
             <ItemCard

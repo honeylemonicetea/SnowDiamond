@@ -21,7 +21,7 @@ function Navbar(){
     return (
       <div className="menu">
         {/* NORMAL */}
-        <div className="box">
+        <div className="menu-box">
           <div className="logo item">
             <NavLink to="/home">
               {" "}

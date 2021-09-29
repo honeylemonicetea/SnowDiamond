@@ -29,54 +29,59 @@ function App(props) {
 
         <div className="content-padding">
           <Switch>
-          {/* todo @honeylemonicetea */}
-          <Route path="/home" component={Main} />
-          <Route path="/shop" render={() => <Shop shop={props.state.shop} />} />
-          <Route path="/lookbook" component={Lookbook} />
-          <Route
-            path="/features"
-            render={() => <Features features={props.state.features} />}
-          />
-          <Route path="/pages" component={UnderConst} />
-          <Route path="/blog" component={UnderConst} />
-          <Route path="/not-found" component={Page404} />
-          <Route path="/item/:id">
-            <ItemDetail />
-          </Route>
-          <Route path="/category/:category">
-            <Category/>
-          </Route>
-          <Route
-            path="/raspberry"
-            render={() => (
-              <Brand
-                name={props.state.raspberry.name}
-                logo={props.state.raspberry.logo}
-                pics={props.state.raspberry.pics}
-                slogan={props.state.raspberry.slogan}
-              />
-            )}
-          />
-          <Route
-            path="/cloudberry"
-            render={() => (
-              <Brand
-                name={props.state.cloudberry.name}
-                logo={props.state.cloudberry.logo}
-                pics={props.state.cloudberry.pics}
-                slogan={props.state.cloudberry.slogan}
-              />
-            )}
-          />
-          <Route path="/" component={Main} />
-        </Switch>
-        <FooterContact />
-        <FooterCopyright />
-      </div>
+            {/* todo @honeylemonicetea */}
+            <Route path="/home" component={Main} />
+            <Route
+              path="/shop"
+              render={() => <Shop shop={props.state.shop} />}
+            />
+            <Route
+              path="/category/shop"
+              render={() => <Shop shop={props.state.shop} />}
+            />
+            <Route path="/lookbook" component={Lookbook} />
+            <Route
+              path="/features"
+              render={() => <Features features={props.state.features} />}
+            />
+            <Route path="/pages" component={UnderConst} />
+            <Route path="/blog" component={UnderConst} />
+            <Route path="/not-found" component={Page404} />
+            <Route path="/item/:id">
+              <ItemDetail />
+            </Route>
+            <Route path="/category/:category">
+              <Category />
+            </Route>
+            <Route
+              path="/raspberry"
+              render={() => (
+                <Brand
+                  name={props.state.raspberry.name}
+                  logo={props.state.raspberry.logo}
+                  pics={props.state.raspberry.pics}
+                  slogan={props.state.raspberry.slogan}
+                />
+              )}
+            />
+            <Route
+              path="/cloudberry"
+              render={() => (
+                <Brand
+                  name={props.state.cloudberry.name}
+                  logo={props.state.cloudberry.logo}
+                  pics={props.state.cloudberry.pics}
+                  slogan={props.state.cloudberry.slogan}
+                />
+              )}
+            />
+            <Route path="/" component={Main} />
+          </Switch>
+          <FooterContact />
+          <FooterCopyright />
+        </div>
       </BrowserRouter>
-      <ArrowUp/>
-        
-        
+      <ArrowUp />
     </div>
   );
 }

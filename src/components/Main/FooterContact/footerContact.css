@@ -1,14 +1,20 @@
 .footer-contact{
-    padding: 210px 220px;
-    padding-bottom: 290px;
+    padding:0;
+    
     /*border: solid;*/
     background-color: #F2F8FC;
-    height: 350px;
+    height: fit-content; 
+    margin:0;
+    padding: 10% 0;
 
 }
+.side, .box, .item-grid-inner{
+    height: fit-content;
+}
+
 .footer-contact .box{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly
 }
 .social img{
     width: 17px;
@@ -33,9 +39,7 @@
     cursor: pointer;
 
 }
-.email-updates{
-    margin-top: 140px;
-}
+
 .input{
     width: 470px;
     background-color: white;
@@ -92,9 +96,10 @@
     .footer-contact{
         padding: 0;
         padding-bottom: 0;
+         height: fit-content;
         /*border: solid;*/
         background-color: #F2F8FC;
-        height: fit-content; 
+       
     }
     .email-updates{
         margin-top: 5%
