@@ -41,6 +41,9 @@
 }
 
 @media (max-width: 860px) {
+    footer, .copyright{
+        display: none;
+    }
     .shop-container{
         /* margin: 25vh 0; */
         display: block;
