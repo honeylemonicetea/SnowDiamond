@@ -11,6 +11,11 @@
 }
 .item-card{
     margin: 2%;
+    height: fit-content;
+}
+.itemInform{
+    height: fit-content;
+    margin-bottom: 5vh;
 }
 
 .item-title{

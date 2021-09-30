@@ -19,7 +19,7 @@ function ItemCard(props){
                
                 {/* <img src={props.imageA} alt="" /> */}
             </div>
-            <div>
+            <div className='itemInform'>
                 <p className='item-title'>{props.title}</p>
                 <p className="item-price">{props.price}</p>
                {props.swatches.map(e=><SwatchDiv colorCode = {e.colorCode} title = {e.colorName}/>)}

@@ -12,14 +12,12 @@ function ArrowUp(){
     const [visible, setVisible] = useState("none")
 
      useScrollPosition(({ prevPos, currPos }) => {
-       console.log(currPos.x);
        if (currPos.y < -200){
            setVisible('block')
        }
        else{
            setVisible('none')
        }
-       console.log(currPos.y);
      });
 
 

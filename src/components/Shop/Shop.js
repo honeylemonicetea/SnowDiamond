@@ -6,6 +6,7 @@ import { NavLink } from "react-router-dom";
 import "./shop.css";
 import ItemCard from "./item-card/ItemCard";
 import Spinner from "../Main/GlobalComponents/Spinner";
+import Pagination from "../Main/GlobalComponents/Pagination/Pagination";
 
 // import LoadMoreBtn from "../Main/GlobalComponents/LoadMore/LoadMore";
 // import ReactPaginate from 'react-paginate';
@@ -15,17 +16,6 @@ import Spinner from "../Main/GlobalComponents/Spinner";
 
 
 function Shop(props) {
-  // PAGINATION START
-  
-    // const perPage = 6
-    // let pageNum = 0
-    // let pages = 0
-    // const [pagesAmount, setpagesAmount] = useState(pages)
-
-
-  // PAGINATION END
-
-
 
     useEffect(() => {
       window.scrollTo(0, 0);
@@ -34,55 +24,29 @@ function Shop(props) {
     const [loading, setLoading] = useState(false)
     const [time, setTime] = useState("")
     const [toggleMenu, setToggleMenu] = useState("menu-closed");
-    //  loadmore
-    //  const [cardsToShow, setcardsToShow] = useState([])
-    //  const [next, setnext] = useState(6)
-    // loadmore end
 
+    // PAGINATION
+    const [currentPage, setcurrentPage] = useState(1)
+    const [itemsPerPage, setItemsPerPage] = useState(6)
+    // PAGINATION END
 
     useEffect(() => {
-      setLoading(true)
-      let startTime = new Date().getTime()
-      fetch("https://h-and-m-api.herokuapp.com/clothing")
-        .then((result) => result.json())
-        .then((result) => {
-            setClothing(result)
-            // setpagesAmount(Math.ceil(result.length/perPage))
-            setLoading(false)
-            let endTime = new Date().getTime()
-            let newT = endTime - startTime
-            setTime(newT)
-        },
-        (error)=>{
-            console.log(error)
-        }
-        );
+      // fetching items using an async function
+      const fetchClothes = async () => {
+        setLoading(true);
+        const response = await fetch("https://h-and-m-api.herokuapp.com/clothing")
+        const resp = await response.json()
+        setClothing(resp)
+        console.log(clothing[0])
+        setLoading(false)
+      };
+      fetchClothes()
+      
       
     }, []);
-  // LOAD MORE
-  // const loopWithSlice = (start, end) => {
-  //   const slicedPosts = clothing.slice(start, end);
-  //   cardsArray = [...cardsArray, ...slicedPosts];
-  //   setcardsToShow(cardsArray);
-  // };
-
-  // useEffect(() => {
-  //   loopWithSlice(0, cardsNumber);
-  // }, []);
-
-  // const handleShowMorePosts = () => {
-  //   loopWithSlice(next, next + cardsNumber);
-  //   setnext(next + cardsNumber);
-  // };
-
-  // pagination FUNCTION START
-  // function pageNav(){
-  //   let items = clothing.slice(pageNum * perPage, (pageNum + 1) * perPage);
-  // }
-  
-  // PAGINATION FRUNCTION END
-
-  // LOAD MORE END
+      const lastItemInd = currentPage * itemsPerPage
+      const firstItemInd = lastItemInd - itemsPerPage
+      const currentItemInd = clothing.slice(firstItemInd, lastItemInd)
   function closeMenu(){
     if (toggleMenu == 'menu-closed'){
       setToggleMenu('menu-open')
@@ -90,6 +54,14 @@ function Shop(props) {
     else if (toggleMenu=='menu-open'){
       setToggleMenu('menu-closed')
     }
+  }
+
+  // change page
+  const paginate = (pageNumber) => {
+     
+       window.scrollTo(0, 0);
+     
+    setcurrentPage(pageNumber)
   }
 
   return loading ? (
@@ -123,6 +95,7 @@ function Shop(props) {
       </button>
       <div className="item-grid side">
         <div className="item-grid-inner">
+          {/* currentItemInd */}
           {clothing.map((e) => (
             <ItemCard
               id={e.id}
@@ -134,8 +107,8 @@ function Shop(props) {
             />
           ))}
         </div>
-
-        {/* <LoadMoreBtn/> */}
+            {/* <Pagination itemsPerPage={itemsPerPage} totalItems={clothing.length} paginate={paginate}/> */}
+       
       </div>
     </div>
   );

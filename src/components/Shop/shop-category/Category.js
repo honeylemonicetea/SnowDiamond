@@ -101,7 +101,8 @@ function Category(){
           open menu
         </button>
         <div className="item-grid side">
-          {filteredCat.map((e) => (
+          <div className="item-grid-inner">
+            {filteredCat.map((e) => (
             <ItemCard
               id={e.id}
               imageA={e.imageA}
@@ -111,6 +112,8 @@ function Category(){
               swatches={e.swatches}
             />
           ))}
+          </div>
+          
         </div>
       </div>
     );
