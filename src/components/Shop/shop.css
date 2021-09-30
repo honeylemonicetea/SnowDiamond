@@ -26,9 +26,10 @@
 }
 /* CATEGORY MENU BUTTON */
 .category-menu{
-    width: 100%;
+    width: 101%;
     position: fixed;
     top: 10vh;
+    left: -0.5vw;
     border: none;
     background-color: antiquewhite;
     padding: 2vh 0;
@@ -46,7 +47,7 @@
         height: fit-content;
     }
     .category-menu{
-        display: block
+        display: block;
     }
     /* MENU OPEN START */
     .side-menu{
@@ -85,14 +86,24 @@
     .side-menu a{
         display: block;
     }
+    .item-grid{
+        margin-top: 20vh;
 
+    }
     .item-grid-inner{
         margin: 1%;
         display: grid;
         grid-template-columns: repeat(2, 48vw);
         grid-gap: 1%;
+        
         margin-bottom: 10vh
          
+    }
+
+}
+@media (max-width: 570px) {
+    .item-grid-inner{
+        margin-bottom: 20vh
     }
 
 }
