@@ -11,14 +11,15 @@ function Main(){
      useEffect(() => {
        window.scrollTo(0, 0);
      }, []);
-    return(
-        <div className='Main'>
-          <Header/>
-          <GridCards/>
-          <Banner/>
-        
-        </div>
-    )
+    return (
+      <div className="Main">
+        <Header />
+        <GridCards />
+        <Banner />
+        <FooterContact />
+        <FooterCopyright />
+      </div>
+    );
 }
 
 export default Main

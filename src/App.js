@@ -77,8 +77,8 @@ function App(props) {
             />
             <Route path="/" component={Main} />
           </Switch>
-          <FooterContact />
-          <FooterCopyright />
+          {/* <FooterContact />
+          <FooterCopyright /> */}
         </div>
       </BrowserRouter>
       <ArrowUp />
