@@ -95,6 +95,7 @@ width: 100%;
     .bottom-burger{
         background-color: #EBF5FB;
         transition: display 10s;
+        overflow: scroll;
     }
     .bottom-burger a{
         display: block;
