@@ -62,6 +62,7 @@
         z-index: 400;
         padding: 11vh 2%;
         font-size: small;
+        transition: 1s;
     }
     .side-menu a{
         border-bottom: solid thin lightgrey;
@@ -80,7 +81,11 @@
 
     /* MENU CLOSED */
     .menu-closed{
-        display: none;
+       width: 0;
+       padding: 0;
+    }
+    .menu-closed a, .menu-closed h3{
+        display: none !important;
     }
 
     .side-menu a{
