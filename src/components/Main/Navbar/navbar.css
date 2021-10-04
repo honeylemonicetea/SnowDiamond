@@ -96,6 +96,9 @@ width: 100%;
         background-color: #EBF5FB;
         transition: display 10s;
         overflow: scroll;
+        transition: 2s;
+        height: 55vh;
+        
     }
     .bottom-burger a{
         display: block;
@@ -106,12 +109,11 @@ width: 100%;
         
     }
     .closed{
-        display: none;
+        height: 0;
         transition: 10s;
         
     }
     .opened{
-        display: block;
-         transition: 10s;
+        height: 55vh;
     }
 }

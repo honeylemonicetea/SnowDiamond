@@ -5,7 +5,7 @@
     height: 92.9vh;
     background-image:  url("../../img/young-handsome-man-student-with-trendy-hairstyle-isolated.png"), linear-gradient(#2DBDE8, #0070A5);
     background-size: contain;
-    background-position: bottom 0  left 190%;
+    background-position: bottom 0  left 90%;
     background-repeat: no-repeat;
     font-family: 'Bebas Neue', cursive;
     margin-top: 3.5%;
@@ -15,4 +15,17 @@
     padding-top: 20%;
     padding-left: 5%;
     font-size: 2em;
+}
+@media (max-width: 750px) {
+    .ghost-text-wrapper{
+        padding: 2%;
+        border-radius: 6px;
+        margin: 0 auto;
+        text-align: center;
+        width: 50vw;
+        background-color: rgba(0,0,0,0.5);
+        color: white;
+    }
+    
+    
 }

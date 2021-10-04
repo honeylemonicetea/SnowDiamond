@@ -16,6 +16,7 @@ import ItemDetail from './components/Shop/item-detail/ItemDetail';
 import {useEffect} from 'react'
 import Category from './components/Shop/shop-category/Category';
 import ArrowUp from './components/Main/GlobalComponents/BackToTop';
+import TestComp from './components/TestComp';
 
 function App(props) {
   useEffect(() => {
@@ -75,7 +76,9 @@ function App(props) {
                 />
               )}
             />
+            <Route path="/test-path" component={TestComp} /> /* TODO: DELETE THIS*/
             <Route path="/" component={Main} />
+
           </Switch>
           {/* <FooterContact />
           <FooterCopyright /> */}

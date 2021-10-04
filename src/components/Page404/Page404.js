@@ -11,8 +11,11 @@ function Page404(){
     return(
         <div className='ghost-page'>
             <div className="ghost-text">
-                <h1>Error 404</h1>
-                <p>The page you are looking for is not found</p>
+                <div className="ghost-text-wrapper">
+                     <h1>Error 404</h1>
+                    <p>The page you are looking for is not found</p>
+                </div>
+               
             </div>
             {/* <Spinner/> */}
         </div>

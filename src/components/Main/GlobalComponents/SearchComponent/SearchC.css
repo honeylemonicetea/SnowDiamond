@@ -1,0 +1,20 @@
+.test1{
+    transition: 2s;
+    margin-right: 1%;
+    border-radius: 5px;
+    border: 1px;
+    outline: none;
+}
+
+
+
+.bar-closed{
+    width: 0;
+    border: none;
+
+}
+.bar-opened{
+    width: 300px;
+    border: solid 1px;
+
+}
