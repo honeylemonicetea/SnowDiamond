@@ -96,7 +96,7 @@ width: 100%;
         background-color: #EBF5FB;
         transition: display 10s;
         overflow: scroll;
-        transition: 2s;
+        transition: 1s ease-in-out;
         height: 55vh;
         
     }
@@ -110,7 +110,7 @@ width: 100%;
     }
     .closed{
         height: 0;
-        transition: 10s;
+       
         
     }
     .opened{
