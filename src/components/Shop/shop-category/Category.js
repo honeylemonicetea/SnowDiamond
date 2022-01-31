@@ -90,6 +90,7 @@ function Category(){
           <NavLink to="/category/hoodies-sweatshirts">
             Hoodies & Sweatshirts
           </NavLink>
+          <NavLink to="/category/underwear">Underwear</NavLink>
           <NavLink to="/category/sportswear">Sportswear</NavLink>
           <NavLink to="/category/shoes">Shoes</NavLink>
           <NavLink to="/category/jumpsuits-rompers">
@@ -103,17 +104,16 @@ function Category(){
         <div className="item-grid side">
           <div className="item-grid-inner">
             {filteredCat.map((e) => (
-            <ItemCard
-              id={e.id}
-              imageA={e.imageA}
-              imageB={e.imageB}
-              title={e.title}
-              price={e.price}
-              swatches={e.swatches}
-            />
-          ))}
+              <ItemCard
+                id={e.id}
+                imageA={e.imageA}
+                imageB={e.imageB}
+                title={e.title}
+                price={e.price}
+                swatches={e.swatches}
+              />
+            ))}
           </div>
-          
         </div>
       </div>
     );

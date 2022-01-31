@@ -37,7 +37,11 @@ width: 100%;
 .box-burger{
     display: none
 }
-
+.icon-bar{
+    width: fit-content;
+    display: flex;
+    align-items: center;
+}
 
 @media (max-width: 860px) {
     /* hiding the original menu */

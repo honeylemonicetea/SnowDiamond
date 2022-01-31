@@ -47,32 +47,44 @@ function ItemDetail(){
           <div className="images-left">
             <div className="preview-column">
               {/* use onclick and usestate hook */}
-
-              <img
+               <input type="radio" id="image1" name="preview" />
+              <label htmlFor="image1">
+                <img
                 src={filtered.imageA}
                 alt={filtered.title}
                 title={filtered.title}
                 onClick={() => setMainImage(filtered.imageA)}
               />
-
+              </label>
+             <input type="radio" id="image2" name="preview" />
+              <label htmlFor="image2">
               <img
                 src={filtered.imageB}
                 alt={filtered.title}
                 title={filtered.title}
                 onClick={() => setMainImage(filtered.imageB)}
               />
-              <img
+              </label>
+               <input type="radio" id="image3" name="preview" />
+              <label htmlFor="image3">
+                <img
                 src={filtered.imageC}
                 alt={filtered.title}
                 title={filtered.title}
                 onClick={() => setMainImage(filtered.imageC)}
               />
-              <img
+              </label>
+             <input type="radio" id="image4" name="preview" />
+              <label htmlFor="image4">
+                <img
                 src={filtered.imageD}
                 alt={filtered.title}
                 title={filtered.title}
                 onClick={() => setMainImage(filtered.imageD)}
               />
+              </label>
+              
+    
             </div>
             <div className="main-image">
               <img
@@ -80,41 +92,38 @@ function ItemDetail(){
                 alt={filtered.title}
                 title={filtered.title}
               />
-              {/* <Zoom img={mainImage ? mainImage : filtered.imageA} 
-              zoomScale={3}
-              width={600}
-              height={600} /> */}
+            
+
             </div>
             <div className="preview-row">
               {/* use onclick and usestate hook */}
               <div className="preview-inner">
                 <img
-                src={filtered.imageA}
-                alt={filtered.title}
-                title={filtered.title}
-                onClick={() => setMainImage(filtered.imageA)}
-              />
+                  src={filtered.imageA}
+                  alt={filtered.title}
+                  title={filtered.title}
+                  onClick={() => setMainImage(filtered.imageA)}
+                />
 
-              <img
-                src={filtered.imageB}
-                alt={filtered.title}
-                title={filtered.title}
-                onClick={() => setMainImage(filtered.imageB)}
-              />
-              <img
-                src={filtered.imageC}
-                alt={filtered.title}
-                title={filtered.title}
-                onClick={() => setMainImage(filtered.imageC)}
-              />
-              <img
-                src={filtered.imageD}
-                alt={filtered.title}
-                title={filtered.title}
-                onClick={() => setMainImage(filtered.imageD)}
-              />
+                <img
+                  src={filtered.imageB}
+                  alt={filtered.title}
+                  title={filtered.title}
+                  onClick={() => setMainImage(filtered.imageB)}
+                />
+                <img
+                  src={filtered.imageC}
+                  alt={filtered.title}
+                  title={filtered.title}
+                  onClick={() => setMainImage(filtered.imageC)}
+                />
+                <img
+                  src={filtered.imageD}
+                  alt={filtered.title}
+                  title={filtered.title}
+                  onClick={() => setMainImage(filtered.imageD)}
+                />
               </div>
-              
             </div>
           </div>
           <div className="details-right">

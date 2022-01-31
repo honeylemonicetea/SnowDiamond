@@ -1,20 +1,29 @@
-.test1{
-    transition: 2s;
-    margin-right: 1%;
-    border-radius: 5px;
-    border: 1px;
+.search-page{
+    margin: 10% 5%;
+}
+
+
+
+.search-bar{
+    width: 500px;
+     border: 1px rgb(0, 0, 0) solid;
+     padding: 15px;
+    margin-right: 1vw;
+    border-radius: 20px;
     outline: none;
 }
 
 
-
-.bar-closed{
-    width: 0;
-    border: none;
-
+.search-bar-container{
+    display: flex;
+    width: 600px;
+    align-items: center;
+    margin: auto;
 }
-.bar-opened{
-    width: 300px;
-    border: solid 1px;
 
+.result-container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin-top: 5vh;
+    
 }

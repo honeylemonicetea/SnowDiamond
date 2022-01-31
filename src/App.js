@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 
 import './App.css';
 import Navbar from "./components/Main/Navbar/Navbar";
@@ -9,14 +8,15 @@ import Page404 from "./components/Page404/Page404";
 import Lookbook from "./components/Lookbook/Lookbook";
 import Brand from "./components/Main/Brands/Brands";
 import Shop from './components/Shop/Shop';
-import FooterContact from './components/Main/FooterContact/FooterContact';
-import FooterCopyright from './components/Main/FooterCopyright/FooterCopyright';
+
 import Features from './components/features/Features';
 import ItemDetail from './components/Shop/item-detail/ItemDetail';
 import {useEffect} from 'react'
 import Category from './components/Shop/shop-category/Category';
 import ArrowUp from './components/Main/GlobalComponents/BackToTop';
 import TestComp from './components/TestComp';
+import SearchComp from './components/Main/GlobalComponents/SearchComponent/SearchComp';
+import Cart from './components/ShoppingCart/Cart';
 
 function App(props) {
   useEffect(() => {
@@ -76,9 +76,12 @@ function App(props) {
                 />
               )}
             />
-            <Route path="/test-path" component={TestComp} /> /* TODO: DELETE THIS*/
+            <Route path="/test-path" component={TestComp} />{" "}
+            {/* TODO: DELETE
+            THIS*/}
+            <Route path="/search" component={SearchComp} />
+            <Route path="/shopping-cart" component={Cart} />
             <Route path="/" component={Main} />
-
           </Switch>
           {/* <FooterContact />
           <FooterCopyright /> */}

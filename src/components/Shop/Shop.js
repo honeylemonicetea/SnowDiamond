@@ -85,6 +85,7 @@ function Shop(props) {
         <NavLink to="category/hoodies-sweatshirts">
           Hoodies & Sweatshirts
         </NavLink>
+        <NavLink to="category/underwear">Underwear</NavLink>
         <NavLink to="category/sportswear">Sportswear</NavLink>
         <NavLink to="category/shoes">Shoes</NavLink>
         <NavLink to="category/jumpsuits-rompers">Jumpsuits & Rompers</NavLink>

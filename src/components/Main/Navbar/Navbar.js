@@ -2,8 +2,10 @@ import React, {useState} from 'react'
 
 import './navbar.css'
 import {NavLink, BrowserRouter} from "react-router-dom";
-import {faBars, faTimes} from '@fortawesome/free-solid-svg-icons'
+import {faBars, faTimes, faSearch, faShoppingCart} from '@fortawesome/free-solid-svg-icons'
+import {faHeart} from '@fortawesome/free-regular-svg-icons'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import SearchComp from '../GlobalComponents/SearchComponent/SearchComp';
 
 function Navbar(){
 
@@ -39,21 +41,13 @@ function Navbar(){
           </div>
           <div className="icon-bar item">
             <NavLink to="/not-found">
-              <img src={require("../../../img/icons8-search.svg").default} />
+              <FontAwesomeIcon icon={faHeart} />
             </NavLink>
-            <NavLink to="/not-found">
-              <img
-                src={
-                  require("../../../img/icons8-heart-outline-60.png").default
-                }
-              />
+            <NavLink to="/shopping-cart">
+              <FontAwesomeIcon icon={faShoppingCart} />
             </NavLink>
-            <NavLink to="/not-found">
-              <img
-                src={
-                  require("../../../img/icons8-shopping-cart-48.png").default
-                }
-              />
+            <NavLink to="/search">
+              <FontAwesomeIcon icon={faSearch} />
             </NavLink>
           </div>
         </div>
@@ -67,7 +61,7 @@ function Navbar(){
                 src={require("../../../img/diamond.png").default}
                 className="logo-burger"
               />
-             </NavLink>
+            </NavLink>
             <p className="website-name">美人鱼</p>
             {/* <div className="bar-wrapper"> */}
             <FontAwesomeIcon
