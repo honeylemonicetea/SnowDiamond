@@ -5,11 +5,10 @@ import OrderItem from "./OrderItem";
 function Cart(){
     return (
       <div className="cart-outer">
-      
-       <h1>Your Cart</h1>
-      
+        <h1>Your Cart</h1>
+
         <div className="cart-container">
-          <div className="items-list"> 
+          <div className="items-list">
             <div className="items-list-header">
               <p>Product</p>
               <p>Price</p>
@@ -26,15 +25,14 @@ function Cart(){
               <hr />
               <div className="checkout-text">
                 <p>
-                  Subtotal:
+                  <span>Subtotal:</span>
                   <span>20</span>
                 </p>
                 <p>
-                  Shipping:
+                  <span>Shipping:</span>
                   <span>$ 0</span>
                 </p>
                 <a href="#">Add a coupon code</a>
-
               </div>
               <div className="checkout-total">
                 <p>
@@ -49,7 +47,6 @@ function Cart(){
           </div>
         </div>
       </div>
-     
     );
 }
 

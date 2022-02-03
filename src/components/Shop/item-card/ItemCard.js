@@ -13,7 +13,7 @@ function ItemCard(props){
             <div className="double-image">
                 {/* <div  className='img first-img' style={{backgroundImage:`url(${props.image1})`}}/> */}
                 <a href=""></a>
-                <Link to={`item/${props.id}`}>
+                <Link to={`/item/${props.id}`}>
                      <Img imageA = {props.imageA} imageB = {props.imageB} title={props.title}/>
                 </Link>
                

@@ -1,10 +1,14 @@
 import React, {useEffect, useState} from "react";
 import './ItemDetail.css'
-import {useParams} from 'react-router-dom'
+import {useParams, NavLink} from 'react-router-dom'
 import Page404 from '../../Page404/Page404'
 import {SwatchBig} from '../item-card/CardStyled'
 import Spinner from '../../Main/GlobalComponents/Spinner'
-import Zoom from 'react-img-zoom'
+
+
+// zoom
+import ReactImageMagnify from "react-image-magnify";
+
 
 function ItemDetail(){
    useEffect(() => {
@@ -41,60 +45,80 @@ function ItemDetail(){
     return (
       <div className="visibleArea">
         <div className="nav-breadcrumb">
-          <a href="">Home</a> /<a href="">Shop</a> /<a href=""></a>
+          <NavLink to="/">HOME</NavLink> / <NavLink to="/shop">SHOP</NavLink> /{" "}
+          <a href="#" style={{ textTransform: "uppercase" }}>
+            {filtered.title}
+          </a>
         </div>
         <div className="item-detail">
           <div className="images-left">
             <div className="preview-column">
               {/* use onclick and usestate hook */}
-               <input type="radio" id="image1" name="preview" />
+              <input type="radio" id="image1" name="preview" />
               <label htmlFor="image1">
                 <img
-                src={filtered.imageA}
-                alt={filtered.title}
-                title={filtered.title}
-                onClick={() => setMainImage(filtered.imageA)}
-              />
+                  src={filtered.imageA}
+                  alt={filtered.title}
+                  title={filtered.title}
+                  onClick={() => setMainImage(filtered.imageA)}
+                />
               </label>
-             <input type="radio" id="image2" name="preview" />
+              <input type="radio" id="image2" name="preview" />
               <label htmlFor="image2">
-              <img
-                src={filtered.imageB}
-                alt={filtered.title}
-                title={filtered.title}
-                onClick={() => setMainImage(filtered.imageB)}
-              />
+                <img
+                  src={filtered.imageB}
+                  alt={filtered.title}
+                  title={filtered.title}
+                  onClick={() => setMainImage(filtered.imageB)}
+                />
               </label>
-               <input type="radio" id="image3" name="preview" />
+              <input type="radio" id="image3" name="preview" />
               <label htmlFor="image3">
                 <img
-                src={filtered.imageC}
-                alt={filtered.title}
-                title={filtered.title}
-                onClick={() => setMainImage(filtered.imageC)}
-              />
+                  src={filtered.imageC}
+                  alt={filtered.title}
+                  title={filtered.title}
+                  onClick={() => setMainImage(filtered.imageC)}
+                />
               </label>
-             <input type="radio" id="image4" name="preview" />
+              <input type="radio" id="image4" name="preview" />
               <label htmlFor="image4">
                 <img
-                src={filtered.imageD}
-                alt={filtered.title}
-                title={filtered.title}
-                onClick={() => setMainImage(filtered.imageD)}
-              />
+                  src={filtered.imageD}
+                  alt={filtered.title}
+                  title={filtered.title}
+                  onClick={() => setMainImage(filtered.imageD)}
+                />
               </label>
-              
-    
             </div>
-            <div className="main-image">
+            
+            
+            
+            {/* <div className="main-image">
               <img
                 src={mainImage ? mainImage : filtered.imageA}
                 alt={filtered.title}
                 title={filtered.title}
               />
-            
+            </div> */}
+         <ReactImageMagnify
+            {...{
+              smallImage: {
+                alt: "Wristwatch by Ted Baker London",
+                isFluidWidth: false, 
+                height: 500,
+                width: 320,
+                src: mainImage ? mainImage : filtered.imageA,
+              },
+              largeImage: {
+                src: mainImage ? mainImage : filtered.imageA,
+                width: 1200,
+                height: 1800,
+              },
+            }}
+          />
 
-            </div>
+
             <div className="preview-row">
               {/* use onclick and usestate hook */}
               <div className="preview-inner">
@@ -126,6 +150,8 @@ function ItemDetail(){
               </div>
             </div>
           </div>
+
+ 
           <div className="details-right">
             <h1 className="detail-title">{filtered.title}</h1>
             <p className="desc">{filtered.productDescription}</p>

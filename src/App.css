@@ -64,3 +64,8 @@ body{
 button{
   cursor: pointer;
 }
+
+
+.carousel-control-next, .carousel-control-prev{
+  top: 50%;
+}
